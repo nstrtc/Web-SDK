@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="styles/bootstrap.css" />
+</head>
+
+<body ng-app="angularApp">
+  <!--[if lte IE 8]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+  <!-- Add your site or application content here -->
+  <div class="header">
+    <div class="navbar navbar-default" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#/">视频入会测试程序</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <h3>
+      使用说明：
+    </h3>
+    <div>
+      <ol>
+        <li>请将该网页应用放置在已安装有效SSl证书的网站上。</li>
+        <li>您也可也将该网页也用放在本地的Web网站上，此时您必须使用http://localhost的方式访问该测试网页。</li>
+        <li>请确保您的机器有摄像头和麦克风</li>
+        <li>测试《被动入会》，请访问“https://vmr.nstyun.com/web_join/”并呼叫“49@rj.com”</li>
+      </ol>
+    </div>
+
+    <br />
+    <h3>
+      屏幕分享软件下载：
+    </h3>
+    <div>
+      方法一：如果您能直接访问Google，请<a href="https://chrome.google.com/webstore/detail/%E9%AB%98%E6%B8%85%E8%A7%86%E9%A2%91%E4%BC%9A%E8%AE%AE%E5%BA%94%E7%94%A8%E5%85%B1%E4%BA%AB%E6%89%A9%E5%B1%95/ebbdfbajpajpohmhgcbpogclfppfbifn" class="a_red">点击这里</a>直接安装!
+      <br />
+      方法二：如果使用360极速浏览器，请<a href="https://ext.chrome.360.cn/webstore/detail/ebbdfbajpajpohmhgcbpogclfppfbifn" class="a_red">点击这里</a>直接安装!
+      <br />
+      方法三：手工安装。请遵照以下步骤手工安装共享扩展
+      <p>1、屏幕分享插件"chrome.crx"保存在Web-SDK/ScreenShare目录下<br />
+        2、将扩展直接拖至支持chrome扩展的浏览器。如果安装失败，将看到如下“无法添加来自此网站的应用...”的提示，请转到下一步手工安装<br />
+        3、您需要从chrome浏览器菜单里选择设置->扩展程序，或直接输入chrome://extensions<br />
+        4、在chrome扩展程序菜单下，将下载的chrome.crx文件直接拖入浏览器，请按提示安装桌面及应用共享扩展</p>
+    </div>
+
+
+    <div ng-include="'views/main.html'" ng-controller="MainCtrl"></div>
+  </div>
+  <script src="vendor/jquery.min.js"></script>
+  <script src="vendor/angular.min.js"></script>
+  <script src="vendor/bootstrap.min.js"></script>
+  <script src="vendor/angular-resource.min.js"></script>
+  <script src="vendor/angular-animate.min.js"></script>
+  <script src="scripts/app.js"></script>
+  <script src="scripts/main.js"></script>
+  <script src="scripts/vcrtc.js"></script>
+  <script src="scripts/VcRegister.js"></script>
+  <script src="scripts/services.js"></script>
+</body>
+
+</html>
